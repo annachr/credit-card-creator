@@ -1,38 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  /*background-color: #A0C2DE;*/
+  background-color: #2B2A61;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1.5rem;
+  padding-bottom: .4rem;
+}
+
+button {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  /*background-color: #9613ED;*/
+  background-color: #4D78EF;
+  border-radius: 5px;
+  color: whitesmoke;
+  border: none;
+  -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 .App {
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 7rem 1rem 2rem 1rem;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  position: relative;
+  -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputField {
+  display: grid;
+  margin-top: 2rem
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardDetails {
+  margin-top: 2rem
 }
 
-.App-link {
-  color: #61dafb;
+.selectList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: .4rem;
+  grid-gap: .7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  max-width: 80%;
+  margin: 0 auto;
+  height: 150px;
+  position: relative;
+  bottom: -65px;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: #4D78EF;
+  -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+
+/*input {*/
+/*  padding: 1rem;*/
+/*  font-size: 1.5rem;*/
+/*}*/
+
+/*select {*/
+/*  padding: 1rem;*/
+/*  margin-right: 1rem;*/
+/*  font-size: 1.5rem;*/
+/*}*/
+
+/*button {*/
+/*  width: 100%;*/
+/*  font-size: 2rem;*/
+/*  padding: 1.5rem;*/
+/*  background-color: #201DE0;*/
+/*  color: whitesmoke;*/
+/*  border: none;*/
+/*}*/
+
+/*.App {*/
+/*  max-width: 600px;*/
+/*  margin: 25rem auto 15rem auto;*/
+/*  padding: 0 3.2rem 5rem 3.2rem;*/
+/*  border-radius: 10px;*/
+/*  background-color: whitesmoke;*/
+/*  !*position: relative;*!*/
+/*}*/
+
+
+/*.inputField {*/
+/*  display: grid;*/
+/*  margin-bottom: 2.5rem;*/
+/*}*/
+
+/*.select {*/
+/*  margin-right: 2rem;*/
+/*}*/
+
+/*.selectList {*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr;*/
+/*}*/
+
+/*.cardDetails {*/
+/*  display: grid;*/
+/*  grid-template-columns: 2fr 1fr;*/
+/*}*/
+
+/*.card {*/
+/*  max-width: 80%;*/
+/*  margin: 0 auto;*/
+/*  height: 250px;*/
+/*  background-color: #4D78EF;*/
+/*  position: relative;*/
+/*  top: -130px;*/
+
+/*  border-radius: 10px;*/
+
+/*}*/
+
