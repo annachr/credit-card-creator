@@ -6,12 +6,16 @@
   outline: none;
 }
 
+:root {
+  --dark-background: #2B2A61
+}
+
 html {
   font-size: 10px;
 }
 
 body {
-  background-color: #2B2A61;
+  background-color: var(--dark-background);
 }
 
 input {
@@ -21,11 +25,23 @@ input {
   border: 1px solid #d6d4d4;
 }
 
+input:focus {
+  border-color: #4D78EF;
+  -webkit-box-shadow: 2px 5px 10px 0 #d6d4d4, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 10px 0 #d6d4d4, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 select {
   padding: 1.5rem;
   font-size: 2rem;
   border-radius: 5px;
   border: 1px solid #d6d4d4;
+}
+
+select:focus {
+  border-color: #4D78EF;
+  -webkit-box-shadow: 2px 5px 10px 0 #d6d4d4, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 10px 0 #d6d4d4, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 label {
@@ -44,6 +60,14 @@ button {
   border: none;
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+button:hover {
+  background-color: #2B2A61;
+}
+
+button:focus {
+  background-color: #2B2A61;
 }
 
 .App {
@@ -119,6 +143,7 @@ button {
   margin-top: 2rem;
   padding: .5rem 1rem;
   border: 1px solid black;
+  border-radius: 5px;
 }
 
 .cardTopSection, .cardBottomSection {
@@ -141,13 +166,15 @@ button {
 
 .holder {
   width: 70%;
-  border: 1px solid black
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .expiration {
   width: 30%;
   margin-left: .7rem;
-  border: 1px solid black
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 @media(min-width: 470px) {
@@ -176,7 +203,7 @@ button {
   }
   .cardDetails {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
   }
   .inputField {

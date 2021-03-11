@@ -1,9 +1,9 @@
-import cardHolderReducer from './cardHolderReducer'
+import cardDataReducer from './cardDataReducer'
 
 import {combineReducers} from 'redux'
 
 const rootReducer = combineReducers({
-  cardHolderReducer
+  cardDataReducer
 })
 
 export default rootReducer
