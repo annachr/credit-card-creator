@@ -9,7 +9,7 @@ function Form() {
       <InputField name="holder" label="Card Holder"/>
       <div className="cardDetails">
         <Select label="Expiration Date"/>
-        <InputField name="cvv" label="CVV"/>
+        <InputField name="cvv" label="CVV" className="cvv"/>
       </div>
       <button>Submit</button>
     </form>

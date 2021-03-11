@@ -11,18 +11,21 @@ html {
 }
 
 body {
-  /*background-color: #A0C2DE;*/
   background-color: #2B2A61;
 }
 
 input {
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 1px solid #d6d4d4;
 }
 
 select {
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 1px solid #d6d4d4;
 }
 
 label {
@@ -35,7 +38,6 @@ button {
   font-size: 2rem;
   padding: 1.5rem;
   margin-top: 2rem;
-  /*background-color: #9613ED;*/
   background-color: #4D78EF;
   border-radius: 5px;
   color: whitesmoke;
@@ -46,18 +48,17 @@ button {
 
 .App {
   margin-top: 0;
-  margin-bottom: 3rem;
 }
 
 .form {
   width: 90%;
-  margin: 0 auto;
-  padding: 7rem 1rem 2rem 1rem;
+  margin: 0 auto 2rem auto;
+  padding: 16rem 3rem 4rem 3rem;
   border-radius: 10px;
   background-color: whitesmoke;
   position: relative;
-  -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
-  box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-box-shadow: 2px 5px 16px 0 #000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 16px 0 #000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .inputField {
@@ -77,16 +78,49 @@ button {
 }
 
 .card {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
-  height: 150px;
+  height: 200px;
   position: relative;
-  bottom: -65px;
+  bottom: -110px;
   border-radius: 10px;
   z-index: 1;
   background-color: #4D78EF;
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+@media(min-width: 470px) {
+  .form {
+    width: 80%
+  }
+  .card {
+    width: 65%;
+    min-width: 300px;
+    height: 270px;
+    max-width: 420px
+  }
+}
+
+@media(min-width: 768px) {
+  .App {
+    margin-top: 6rem
+  }
+  .form {
+    width: 70%;
+    max-width: 600px;
+  }
+
+
+  .cardDetails {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .inputField {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 /*input {*/
