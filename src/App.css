@@ -85,9 +85,69 @@ button {
   bottom: -110px;
   border-radius: 10px;
   z-index: 1;
-  background-color: #4D78EF;
+  padding: 2rem;
+  color: whitesmoke;
+  background-image: url('./backgrounds/sky.jpg');
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.cardWrapper {
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hologram {
+  min-width: 70px;
+  width: 20%;
+  height: 150%;
+  border-radius: 8px;
+  background-image: url('hologram.jpg');
+}
+
+.visaLogo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cardNumberSection {
+  font-size: 2rem;
+  /*font-size: 2.5rem;*/
+  margin-top: 2rem;
+  padding: .5rem 1rem;
+  border: 1px solid black;
+}
+
+.cardTopSection, .cardBottomSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardData {
+  display: grid;
+  padding-left: 1rem;
+}
+
+.data {
+  font-size: 1.3rem;
+}
+
+.dataDetail {
+  font-size: 1.5rem;
+}
+
+.holder {
+  width: 70%;
+  border: 1px solid black
+}
+
+.expiration {
+  width: 30%;
+  margin-left: .7rem;
+  border: 1px solid black
 }
 
 @media(min-width: 470px) {
@@ -97,10 +157,14 @@ button {
   .card {
     width: 65%;
     min-width: 300px;
-    height: 270px;
+    height: 250px;
     max-width: 420px
   }
+  .expiration {
+    width: 25%;
+  }
 }
+
 
 @media(min-width: 768px) {
   .App {
@@ -108,10 +172,8 @@ button {
   }
   .form {
     width: 70%;
-    max-width: 600px;
+    max-width: 550px;
   }
-
-
   .cardDetails {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -121,66 +183,22 @@ button {
     margin-top: 0;
     margin-bottom: 2rem;
   }
+  .cardNumberSection {
+    font-size: 3rem;
+  }
+  .data {
+    font-size: 1.5rem;
+  }
+
+  .dataDetail {
+    font-size: 2rem;
+  }
+  .expiration {
+    padding-left: 2rem;
+  }
 }
 
-/*input {*/
-/*  padding: 1rem;*/
-/*  font-size: 1.5rem;*/
-/*}*/
-
-/*select {*/
-/*  padding: 1rem;*/
-/*  margin-right: 1rem;*/
-/*  font-size: 1.5rem;*/
-/*}*/
-
-/*button {*/
-/*  width: 100%;*/
-/*  font-size: 2rem;*/
-/*  padding: 1.5rem;*/
-/*  background-color: #201DE0;*/
-/*  color: whitesmoke;*/
-/*  border: none;*/
-/*}*/
-
-/*.App {*/
-/*  max-width: 600px;*/
-/*  margin: 25rem auto 15rem auto;*/
-/*  padding: 0 3.2rem 5rem 3.2rem;*/
-/*  border-radius: 10px;*/
-/*  background-color: whitesmoke;*/
-/*  !*position: relative;*!*/
-/*}*/
 
 
-/*.inputField {*/
-/*  display: grid;*/
-/*  margin-bottom: 2.5rem;*/
-/*}*/
 
-/*.select {*/
-/*  margin-right: 2rem;*/
-/*}*/
-
-/*.selectList {*/
-/*  display: grid;*/
-/*  grid-template-columns: 1fr 1fr;*/
-/*}*/
-
-/*.cardDetails {*/
-/*  display: grid;*/
-/*  grid-template-columns: 2fr 1fr;*/
-/*}*/
-
-/*.card {*/
-/*  max-width: 80%;*/
-/*  margin: 0 auto;*/
-/*  height: 250px;*/
-/*  background-color: #4D78EF;*/
-/*  position: relative;*/
-/*  top: -130px;*/
-
-/*  border-radius: 10px;*/
-
-/*}*/
 
