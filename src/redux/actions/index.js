@@ -4,8 +4,14 @@ export const addName = () => {
   }
 }
 
-export const addDate = () => {
+export const changeStyle = () => {
   return {
-    type: 'ADD_DATE'
+    type: 'CHANGE_STYLE_ACTIVE'
+  }
+}
+
+export const changeStyleInactive = () => {
+  return {
+    type: 'CHANGE_STYLE_INACTIVE'
   }
 }

@@ -4,7 +4,12 @@ function InputField(props) {
   return (
     <div className="inputField">
       <label htmlFor={props.name}>{props.label}</label>
-      <input name={props.name} maxLength={props.length}/>
+      <input
+        name={props.name}
+        onFocus={props.onFocus}
+        onBlur={props.onBlur}
+        maxLength={props.length}
+      />
     </div>
   )
 }
