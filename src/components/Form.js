@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import {useDispatch} from 'react-redux'
 import InputField from './InputField'
 import Select from './Select'
-import {changeStyle, changeStyleInactive} from '../redux/actions'
+import {changeStyle, changeStyleInactive, showCardBack, showCardFront} from '../redux/actions'
 
 function Form() {
   const dispatch = useDispatch()
@@ -33,6 +33,8 @@ function Form() {
           name="cvvNumber"
           value={cvvNumber}
           onChange={(e) => setCvvNumber(e.target.value)}
+          onFocus={() => dispatch(showCardBack())}
+          onBlur={() => dispatch(showCardFront())}
           label="CVV"
           length="3"
         />

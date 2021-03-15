@@ -15,3 +15,17 @@ export const changeStyleInactive = () => {
     type: 'CHANGE_STYLE_INACTIVE'
   }
 }
+
+export const showCardBack = () => {
+  return {
+    type: 'SHOW_CARD_BACK'
+  }
+}
+
+export const showCardFront = () => {
+  return {
+    type: 'SHOW_CARD_FRONT'
+  }
+}
+
+

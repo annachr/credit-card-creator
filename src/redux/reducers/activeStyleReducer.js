@@ -5,7 +5,7 @@ const activeStyleReducer = (state = initialState, action) => {
     case 'CHANGE_STYLE_ACTIVE':
       return state = 'active'
     case 'CHANGE_STYLE_INACTIVE':
-      return state = ''
+      return state = initialState
     default:
       return state
   }

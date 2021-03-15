@@ -100,15 +100,17 @@ button:hover, button:focus {
   bottom: -110px;
   border-radius: 10px;
   z-index: 1;
-  padding: 2rem;
   color: whitesmoke;
   background-image: url('./backgrounds/sky.jpg');
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  transition: all 1s ease-in;
+  transform-style: preserve-3d;
 }
 
-.cardWrapper {
+.cardFrontWrapper {
   height: 100%;
+  padding: 2rem;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -117,8 +119,8 @@ button:hover, button:focus {
 
 .hologram {
   min-width: 70px;
-  width: 20%;
-  height: 150%;
+  width: 18%;
+  height: 120%;
   border-radius: 8px;
   background-image: url('hologram.jpg');
 }
@@ -127,6 +129,7 @@ button:hover, button:focus {
   font-size: 3rem;
   font-weight: bold;
 }
+
 
 .cardNumberSection {
   font-size: 2rem;
@@ -168,6 +171,49 @@ button:hover, button:focus {
   backdrop-filter: blur(5px)
 }
 
+.cardAnimation {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+/*CARD BACK SIDE*/
+
+.cardBackWrapper {
+  display: grid;
+  grid-gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.blackLine {
+  height: 3.8rem;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.backBottomSection {
+  margin: 0 2rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.cvvSection {
+  font-size: 1.5rem;
+}
+
+.cvvNumber {
+  height: 3.8rem;
+  border-radius: 5px;
+  margin-top: .5rem;
+  background-color: whitesmoke;
+}
+
+.backLogo {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  float: right;
+}
+
+
 /*MEDIA QUERIES*/
 
 @media(min-width: 470px) {
@@ -193,6 +239,16 @@ button:hover, button:focus {
     width: 70%;
     max-width: 550px;
   }
+
+  .hologram {
+    height: 110%;
+    width: 15%;
+  }
+
+  .visaLogo {
+    font-size: 3.6rem;
+  }
+
   .cardDetails {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -215,6 +271,23 @@ button:hover, button:focus {
   .expiration {
     padding-left: 2rem;
   }
+
+  .cardBackWrapper {
+    grid-gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .blackLine {
+    height: 4.5rem;
+    margin-top: 3rem;
+  }
+
+  .cvvNumber {
+    height: 4.5rem;
+    border-radius: 5px;
+    margin-top: .5rem;
+  }
+
 }
 
 
