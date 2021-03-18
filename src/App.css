@@ -104,8 +104,6 @@ button:hover, button:focus {
   background-image: url('./backgrounds/sky.jpg');
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
-  transition: all 1s ease-in;
-  transform-style: preserve-3d;
 }
 
 .cardFrontWrapper {
@@ -116,6 +114,7 @@ button:hover, button:focus {
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 .hologram {
   min-width: 70px;
@@ -173,7 +172,6 @@ button:hover, button:focus {
 
 .cardAnimation {
   transform: rotateY(180deg);
-  transform-style: preserve-3d;
 }
 
 /*CARD BACK SIDE*/
@@ -185,9 +183,8 @@ button:hover, button:focus {
 }
 
 .blackLine {
-  height: 3.8rem;
   margin-top: 2rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .backBottomSection {
@@ -204,7 +201,10 @@ button:hover, button:focus {
   height: 3.8rem;
   border-radius: 5px;
   margin-top: .5rem;
+  padding-left: 1.5rem;
+  font-size: 3rem;
   background-color: whitesmoke;
+  color: black;
 }
 
 .backLogo {
@@ -287,7 +287,6 @@ button:hover, button:focus {
     border-radius: 5px;
     margin-top: .5rem;
   }
-
 }
 
 

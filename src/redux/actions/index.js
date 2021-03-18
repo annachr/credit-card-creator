@@ -1,8 +1,3 @@
-export const addName = () => {
-  return {
-    type: 'ADD_NAME'
-  }
-}
 
 export const changeStyle = () => {
   return {

@@ -8,6 +8,8 @@ function InputField(props) {
         name={props.name}
         onFocus={props.onFocus}
         onBlur={props.onBlur}
+        onChange={props.onChange}
+        onKeyUp={props.onKeyUp}
         maxLength={props.length}
       />
     </div>

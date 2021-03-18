@@ -1,14 +1,15 @@
-import React from "react"
+import React, {useContext} from "react"
 import { useSelector } from 'react-redux'
+import {InputDataContext} from '../inputDataContext'
 
 function CardFront() {
-
-  const {cardNumber, cardHolder, cardExpiration} = useSelector(state => state.cardDataReducer)
+  const {cardNumber, cardHolder, cardExpirationMonth, cardExpirationYear} = useContext(InputDataContext)
+  // const {cardHolder, cardExpiration} = useSelector(state => state.cardDataReducer)
   const activeStyle = useSelector(state => state.activeStyleReducer)
-  const cardAnimation = useSelector(state => state.cardRotateReducer)
+  // const cardAnimation = useSelector(state => state.cardRotateReducer)
 
   return (
-    <div className={`cardFrontWrapper ${cardAnimation}`}>
+    <div className="cardFrontWrapper">
       <div className="cardTopSection">
         <span className="hologram"> </span>
         <em><span className="visaLogo">VISA</span></em>
@@ -23,7 +24,7 @@ function CardFront() {
         </div>
         <div className={`cardData expiration ${activeStyle}`}>
           <span className="data">Expires</span>
-          <p><span className="dataDetail">{cardExpiration.month}</span>/<span className="dataDetail">{cardExpiration.year}</span></p>
+          <p><span className="dataDetail">{cardExpirationMonth}</span>/<span className="dataDetail">{cardExpirationYear}</span></p>
         </div>
       </div>
     </div>

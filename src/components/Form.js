@@ -1,28 +1,40 @@
-import React, {useState} from "react"
-import {useDispatch} from 'react-redux'
+import React, { useContext } from "react"
+import { useDispatch } from 'react-redux'
 import InputField from './InputField'
 import Select from './Select'
+import {InputDataContext} from '../inputDataContext'
 import {changeStyle, changeStyleInactive, showCardBack, showCardFront} from '../redux/actions'
 
 function Form() {
+  const {
+    formCardNumber,
+    formHolderName,
+    changeCardNumber,
+    handleNumberChange,
+    handleHolderChange,
+    changeHolder,
+    formCvvNumber,
+    handleCvvChange,
+    changeCvv
+  } = useContext(InputDataContext)
+
   const dispatch = useDispatch()
-  const [holderName, setHolderName] = useState('')
-  const [cardNumber, setCardNumber] = useState('')
-  const [cvvNumber, setCvvNumber] = useState('')
 
   return (
     <form className="form">
       <InputField
         name="number"
-        value={cardNumber}
-        onChange={(e) => setCardNumber(e.target.value)}
+        value={formCardNumber}
+        onChange={handleNumberChange}
+        onKeyUp={changeCardNumber}
         label="Card Number"
         length="19"
       />
       <InputField
         name="holder"
-        value={holderName}
-        onChange={(e) => setHolderName(e.target.value)}
+        value={formHolderName}
+        onChange={handleHolderChange}
+        onKeyUp={changeHolder}
         onFocus={() => dispatch(changeStyle())}
         onBlur={() => dispatch(changeStyleInactive())}
         label="Card Holder"
@@ -31,8 +43,9 @@ function Form() {
         <Select label="Expiration Date"/>
         <InputField
           name="cvvNumber"
-          value={cvvNumber}
-          onChange={(e) => setCvvNumber(e.target.value)}
+          value={formCvvNumber}
+          onChange={handleCvvChange}
+          onKeyUp={changeCvv}
           onFocus={() => dispatch(showCardBack())}
           onBlur={() => dispatch(showCardFront())}
           label="CVV"

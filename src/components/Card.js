@@ -9,7 +9,7 @@ function Card() {
 
   return (
     <div className={`card ${cardAnimation}`}>
-      {cardAnimation === '' ? <CardFront /> : <CardBack />}
+        {cardAnimation === '' ? <CardFront /> : <CardBack />}
     </div>
   )
 }
