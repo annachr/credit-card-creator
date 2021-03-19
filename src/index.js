@@ -5,15 +5,18 @@ import {createStore} from 'redux'
 import rootReducer from './redux/reducers'
 import {Provider} from 'react-redux'
 import {InputContextProvider} from './inputDataContext'
+import {CardThemeContextProvider} from './cardThemeContext'
 const store = createStore(rootReducer)
 
 ReactDOM.render(
   <InputContextProvider>
+    <CardThemeContextProvider>
     <Provider store={store}>
       <React.StrictMode>
         <App />
       </React.StrictMode>
     </Provider>
+    </CardThemeContextProvider>
   </InputContextProvider>,
   document.getElementById('root')
 );

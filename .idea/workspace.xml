@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0359dce-c15f-4bca-9cfa-24fed82a6120" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/inputDataContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/formDataReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cardThemeContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardTheme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/bokeh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/clouds.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/dandelion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/dark_wood.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/earth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/gold.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/greeny.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/lines.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/red.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/silver.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/sky.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/stars.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardBack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardBack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardFront.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardFront.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/cardDataReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/cardDataReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../countries_dashboard_api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react_app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615369820246</updated>
-      <workItem from="1615369821598" duration="92159000" />
+      <workItem from="1615369821598" duration="110294000" />
     </task>
     <servers />
   </component>
@@ -93,10 +102,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1615980280121">
+    <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1616146734888">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2660" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1615980280121" />
+    <state x="2660" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1616146734888" />
     <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1615546552914">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>

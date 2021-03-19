@@ -1,20 +1,21 @@
 import React, { useContext } from "react"
 import { useDispatch } from 'react-redux'
+import {InputDataContext} from '../inputDataContext'
 import InputField from './InputField'
 import Select from './Select'
-import {InputDataContext} from '../inputDataContext'
+import CardTheme from './CardTheme'
 import {changeStyle, changeStyleInactive, showCardBack, showCardFront} from '../redux/actions'
 
 function Form() {
   const {
     formCardNumber,
     formHolderName,
-    changeCardNumber,
+    formCvvNumber,
     handleNumberChange,
     handleHolderChange,
-    changeHolder,
-    formCvvNumber,
     handleCvvChange,
+    changeHolder,
+    changeCardNumber,
     changeCvv
   } = useContext(InputDataContext)
 
@@ -52,7 +53,8 @@ function Form() {
           length="3"
         />
       </div>
-      <button>Submit</button>
+      <CardTheme label="Card Theme"/>
+      <button className="submit">Submit</button>
     </form>
   )
 }

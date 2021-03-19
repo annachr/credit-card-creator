@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,15 +8,21 @@
 }
 
 :root {
-  --dark-background: #2B2A61
-}
-
-html {
+  --dark-background: #2B2A61;
   font-size: 10px;
 }
 
+
+/*.App {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
 body {
   background-color: var(--dark-background);
+  margin-top: -8rem
 }
 
 input, select {
@@ -42,32 +49,11 @@ label {
   padding-bottom: .4rem;
 }
 
-button {
-  width: 100%;
-  font-size: 2rem;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  background-color: #4D78EF;
-  border-radius: 5px;
-  color: whitesmoke;
-  border: none;
-  -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
-  box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-button:hover, button:focus {
-  background-color: var(--dark-background);
-  transition: .5s ease all;
-  cursor: pointer;
-}
-
-.App {
-  margin-top: 0;
-}
-
 .form {
+  display: grid;
+  grid-gap: 2rem;
   width: 90%;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 3rem auto;
   padding: 16rem 3rem 4rem 3rem;
   border-radius: 10px;
   background-color: whitesmoke;
@@ -78,11 +64,11 @@ button:hover, button:focus {
 
 .inputField {
   display: grid;
-  margin-top: 2rem
 }
 
 .cardDetails {
-  margin-top: 2rem
+  display: grid;
+  grid-gap: 2rem
 }
 
 .selectList {
@@ -97,11 +83,11 @@ button:hover, button:focus {
   margin: 0 auto;
   height: 200px;
   position: relative;
-  bottom: -110px;
+  bottom: -120px;
   border-radius: 10px;
   z-index: 1;
   color: whitesmoke;
-  background-image: url('./backgrounds/sky.jpg');
+  background-image: url('./backgrounds/bg14.jpg');
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
@@ -115,7 +101,6 @@ button:hover, button:focus {
   justify-content: space-between;
 }
 
-
 .hologram {
   min-width: 70px;
   width: 18%;
@@ -128,7 +113,6 @@ button:hover, button:focus {
   font-size: 3rem;
   font-weight: bold;
 }
-
 
 .cardNumberSection {
   font-size: 2rem;
@@ -160,7 +144,7 @@ button:hover, button:focus {
 
 .expiration {
   width: 30%;
-  margin-left: .7rem;
+  margin-left: .5rem;
 }
 
 .active {
@@ -172,6 +156,56 @@ button:hover, button:focus {
 
 .cardAnimation {
   transform: rotateY(180deg);
+}
+
+.themeSection {
+  display: grid;
+}
+
+.gallerySection {
+  display: grid;
+  grid-template-columns: 1fr  3fr 1fr;
+  padding: .5rem;
+  border-radius: 5px;
+  border: 1px solid #d6d4d4;
+}
+
+.themeGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 3rem;
+  border: none;
+  max-width: 7rem;
+}
+
+.smallImg {
+  width: 100%;
+  height: 4.5rem;
+  border: 1px solid black;
+}
+
+.submit {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: #4D78EF;
+  border-radius: 5px;
+  color: whitesmoke;
+  border: none;
+  -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.submit:hover, .submit:focus {
+  background-color: var(--dark-background);
+  transition: .5s ease all;
+  cursor: pointer;
 }
 
 /*CARD BACK SIDE*/
@@ -213,7 +247,6 @@ button:hover, button:focus {
   float: right;
 }
 
-
 /*MEDIA QUERIES*/
 
 @media(min-width: 470px) {
@@ -228,6 +261,10 @@ button:hover, button:focus {
   }
   .expiration {
     width: 25%;
+  }
+
+  .smallImg {
+    max-width: 85%;
   }
 }
 
@@ -287,6 +324,8 @@ button:hover, button:focus {
     border-radius: 5px;
     margin-top: .5rem;
   }
+
+
 }
 
 

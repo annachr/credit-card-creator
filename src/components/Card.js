@@ -6,6 +6,9 @@ import {useSelector} from 'react-redux'
 function Card() {
 
   const cardAnimation = useSelector(state => state.cardRotateReducer)
+  // const themeStyle = {
+  //   backgroundColor: `url('./backgrounds/bg14.jpg')`
+  // }
 
   return (
     <div className={`card ${cardAnimation}`}>
