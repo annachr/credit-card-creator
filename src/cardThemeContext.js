@@ -2,12 +2,12 @@ import React, {useState} from 'react'
 const CardThemeContext = React.createContext()
 
 function CardThemeContextProvider(props) {
-
   const [bgNumber, setBgNumber] = useState(1)
   const [disabledNext, setDisabledNext] = useState(false)
   const [disabledPrev, setDisabledPrev] = useState(true)
 
-  function nextSlide() {
+  function nextSlide(e) {
+    e.preventDefault()
     setBgNumber(bgNumber + 1)
     setDisabledPrev(false)
     if (bgNumber === 15) {
@@ -17,7 +17,8 @@ function CardThemeContextProvider(props) {
     console.log(bgNumber)
   }
 
-  function prevSlide() {
+  function prevSlide(e) {
+    e.preventDefault()
     setBgNumber(bgNumber - 1)
     setDisabledNext(false)
     if (bgNumber === 1) {

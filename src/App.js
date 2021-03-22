@@ -6,10 +6,10 @@ import Form from "./components/Form"
 
 function App() {
   return (
-    <div className="App">
-        <Card />
-        <Form />
-    </div>
+      <div className="App">
+          <Card />
+          <Form />
+      </div>
 
   );
 }

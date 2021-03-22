@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0359dce-c15f-4bca-9cfa-24fed82a6120" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cardThemeContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardTheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ThemeImg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/bokeh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/clouds.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/dandelion.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/dark_wood.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/diamonds.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/earth.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/gold.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/green.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/greeny.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/lines.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/map.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/red.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/silver.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/sky.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/stars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backgrounds/bg5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cardThemeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cardThemeContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardTheme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615369820246</updated>
-      <workItem from="1615369821598" duration="110294000" />
+      <workItem from="1615369821598" duration="116698000" />
     </task>
     <servers />
   </component>
