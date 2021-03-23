@@ -5,6 +5,7 @@ function CardThemeContextProvider(props) {
   const [bgNumber, setBgNumber] = useState(1)
   const [disabledNext, setDisabledNext] = useState(false)
   const [disabledPrev, setDisabledPrev] = useState(true)
+  const [cardStyle, setCardStyle] = useState(1)
 
   function nextSlide(e) {
     e.preventDefault()
@@ -26,13 +27,19 @@ function CardThemeContextProvider(props) {
     }
   }
 
+  function changeTheme() {
+    setCardStyle(bgNumber)
+  }
+
   return (
     <CardThemeContext.Provider value={{
       bgNumber,
       disabledNext,
       disabledPrev,
       nextSlide,
-      prevSlide
+      prevSlide,
+      cardStyle,
+      changeTheme
     }}>
       {props.children}
     </CardThemeContext.Provider>

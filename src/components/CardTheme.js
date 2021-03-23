@@ -19,8 +19,8 @@ function CardTheme(props) {
         <button className="arrow" onClick={prevSlide} disabled={disabledPrev}>◂</button>
         <div className="themeGallery">
           <ThemeImg imgNumber={bgNumber}/>
-          <ThemeImg imgNumber={bgNumber + 1}/>
-          <ThemeImg imgNumber={bgNumber + 2}/>
+          {/*<ThemeImg imgNumber={bgNumber + 1}/>*/}
+          {/*<ThemeImg imgNumber={bgNumber + 2}/>*/}
         </div>
         <button className="arrow" onClick={nextSlide} disabled={disabledNext}>▸</button>
       </div>

@@ -6,6 +6,7 @@ function InputField(props) {
       <label htmlFor={props.name}>{props.label}</label>
       <input
         name={props.name}
+        value={props.value}
         onFocus={props.onFocus}
         onBlur={props.onBlur}
         onChange={props.onChange}

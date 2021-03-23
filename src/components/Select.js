@@ -5,6 +5,15 @@ function Select(props) {
 
   const {changeExpirationMonth, changeExpirationYear} = useContext(InputDataContext)
 
+  //   let date = new Date()
+  //   let currentYear = date.getFullYear()
+  //   // let yearOptions = "<option value='0'>Year</option>"
+  //   for (let i = currentYear; i < currentYear + 12; i++) {
+  //     yearOptions += "<option value='"+i+"'>"+i+" </option>"
+  //   }
+
+
+
   return (
     <div className="select">
       <label>{props.label}</label>
@@ -24,7 +33,7 @@ function Select(props) {
           <option>11</option>
           <option>12</option>
         </select>
-        <select onChange={changeExpirationYear}>
+        <select onChange={changeExpirationYear} value={props.value}>
           <option>Year</option>
           <option>2021</option>
           <option>2022</option>

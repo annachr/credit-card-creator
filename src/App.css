@@ -87,7 +87,7 @@ label {
   border-radius: 10px;
   z-index: 1;
   color: whitesmoke;
-  background-image: url('./backgrounds/bg14.jpg');
+  /*background-image: url('./backgrounds/bg14.jpg');*/
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
@@ -172,7 +172,8 @@ label {
 
 .themeGallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
   grid-gap: 1rem;
   padding: 0 1rem
 }
@@ -214,9 +215,13 @@ label {
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.submit:hover, .submit:focus {
+.submit:hover {
   background-color: var(--dark-background);
   transition: .5s ease all;
+  cursor: pointer;
+}
+.submit:active {
+  background-color: #4D78EF;
   cursor: pointer;
 }
 
