@@ -8,20 +8,13 @@
 }
 
 :root {
-  --dark-background: #2B2A61;
+  --primary-background-color: #2B2A61;
+  --secondary-background-color: #4D78EF;
   font-size: 10px;
 }
 
-
-/*.App {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
 body {
-  background-color: var(--dark-background);
+  background-color: var(--primary-background-color);
   margin-top: -8rem
 }
 
@@ -35,12 +28,12 @@ input, select {
 input:focus, select:focus {
   -webkit-box-shadow: 2px 5px 10px 0 #d6d4d4, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 10px 0 #d6d4d4, 5px 5px 15px 5px rgba(0,0,0,0);
-  border-color: #4D78EF;
+  border-color: var(--secondary-background-color);
   transition: 1s ease all;
 }
 
 input:hover, select:hover {
-  border-color: #4D78EF;
+  border-color: var(--secondary-background-color);
   transition: 1s ease all;
 }
 
@@ -164,7 +157,7 @@ label {
 
 .gallerySection {
   display: grid;
-  grid-template-columns: 1fr  5fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   padding: .5rem;
   border-radius: 5px;
   border: 1px solid #d6d4d4;
@@ -182,6 +175,7 @@ label {
   font-size: 3rem;
   border: none;
   max-width: 4rem;
+  background-color: transparent;
 }
 
 .arrow:hover {
@@ -191,7 +185,7 @@ label {
 }
 
 .smallImg {
-  width: 100%;
+  width: 50%;
   height: 4.5rem;
   margin: 0 auto
 }
@@ -201,13 +195,11 @@ label {
   border: 1px solid #d6d4d4;
   cursor: pointer;
 }
-
-.submit {
-  width: 100%;
+.btn {
   font-size: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-top: 2rem;
-  background-color: #4D78EF;
+  background-color: var(--secondary-background-color);
   border-radius: 5px;
   color: whitesmoke;
   border: none;
@@ -215,12 +207,12 @@ label {
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.submit:hover {
-  background-color: var(--dark-background);
+.btn:hover {
+  background-color: var(--primary-background-color);
   transition: .5s ease all;
   cursor: pointer;
 }
-.submit:active {
+.btn:active {
   background-color: #4D78EF;
   cursor: pointer;
 }
@@ -279,18 +271,14 @@ label {
   .expiration {
     width: 25%;
   }
-  .smallImg {
-    max-width: 85%;
-  }
-
   .themeGallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
   .gallerySection {
     grid-template-columns: 1fr 3fr 1fr;
   }
   .smallImg {
-    width: 100%;
+    width: 40%;
   }
   .arrow {
     max-width: 7rem
@@ -314,7 +302,6 @@ label {
   .visaLogo {
     font-size: 3.6rem;
   }
-
   .cardDetails {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -330,7 +317,6 @@ label {
   .data {
     font-size: 1.5rem;
   }
-
   .dataDetail {
     font-size: 2rem;
   }

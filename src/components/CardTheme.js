@@ -2,25 +2,24 @@ import React, { useContext } from 'react'
 import {CardThemeContext} from '../cardThemeContext'
 import ThemeImg from './ThemeImg'
 
-
-function CardTheme(props) {
+function CardTheme() {
   const {
     bgNumber,
     disabledNext,
     disabledPrev,
     nextSlide,
-    prevSlide
+    prevSlide,
+    showTheme,
+    showThemeSection
   } = useContext(CardThemeContext)
 
   return(
     <div className="themeSection">
-      <label>{props.label}</label>
-      <div className="gallerySection">
+      <button className='btn' onClick={showThemeSection}>Change Card Theme</button>
+      <div className="gallerySection" style={{display: showTheme ? 'grid' : 'none'}}>
         <button className="arrow" onClick={prevSlide} disabled={disabledPrev}>◂</button>
-        <div className="themeGallery">
+        <div className="themeGallery" >
           <ThemeImg imgNumber={bgNumber}/>
-          {/*<ThemeImg imgNumber={bgNumber + 1}/>*/}
-          {/*<ThemeImg imgNumber={bgNumber + 2}/>*/}
         </div>
         <button className="arrow" onClick={nextSlide} disabled={disabledNext}>▸</button>
       </div>

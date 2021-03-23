@@ -6,30 +6,45 @@ function CardThemeContextProvider(props) {
   const [disabledNext, setDisabledNext] = useState(false)
   const [disabledPrev, setDisabledPrev] = useState(true)
   const [cardStyle, setCardStyle] = useState(1)
+  const [showTheme, setShowTheme] = useState(false)
+
+  function showThemeSection(e) {
+    e.preventDefault()
+    setShowTheme(!showTheme)
+  }
+
+  function changeTheme() {
+    setCardStyle(bgNumber + 1)
+  }
+
+  function changeThemeBack() {
+    setCardStyle(bgNumber - 1)
+
+  }
 
   function nextSlide(e) {
     e.preventDefault()
     setBgNumber(bgNumber + 1)
     setDisabledPrev(false)
-    if (bgNumber === 13) {
-      setBgNumber(13)
+    if (bgNumber === 14) {
+      // setBgNumber(15)
       setDisabledNext(true)
     }
+    changeTheme()
+    console.log(bgNumber)
   }
 
   function prevSlide(e) {
     e.preventDefault()
     setBgNumber(bgNumber - 1)
     setDisabledNext(false)
-    if (bgNumber === 1) {
-      setBgNumber(1)
+    if (bgNumber === 2) {
+      // setBgNumber(1)
       setDisabledPrev(true)
     }
+    changeThemeBack()
   }
 
-  function changeTheme() {
-    setCardStyle(bgNumber)
-  }
 
   return (
     <CardThemeContext.Provider value={{
@@ -39,7 +54,9 @@ function CardThemeContextProvider(props) {
       nextSlide,
       prevSlide,
       cardStyle,
-      changeTheme
+      changeTheme,
+      showThemeSection,
+      showTheme
     }}>
       {props.children}
     </CardThemeContext.Provider>

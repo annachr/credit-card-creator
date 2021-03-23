@@ -16,7 +16,8 @@ function Form() {
     handleCvvChange,
     changeHolder,
     changeCardNumber,
-    changeCvv
+    changeCvv,
+    showThemeSection
   } = useContext(InputDataContext)
 
   const dispatch = useDispatch()
@@ -53,8 +54,8 @@ function Form() {
           length="3"
         />
       </div>
-      <CardTheme label="Card Theme"/>
-      <button className="submit" onClick={(e) => e.preventDefault()}>Submit</button>
+      <CardTheme onClick={showThemeSection}/>
+      <button className="btn" onClick={(e) => e.preventDefault()}>Submit</button>
     </form>
   )
 }
