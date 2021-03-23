@@ -10,11 +10,10 @@ function CardThemeContextProvider(props) {
     e.preventDefault()
     setBgNumber(bgNumber + 1)
     setDisabledPrev(false)
-    if (bgNumber === 15) {
-      setBgNumber(15)
+    if (bgNumber === 13) {
+      setBgNumber(13)
       setDisabledNext(true)
     }
-    console.log(bgNumber)
   }
 
   function prevSlide(e) {

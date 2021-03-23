@@ -164,7 +164,7 @@ label {
 
 .gallerySection {
   display: grid;
-  grid-template-columns: 1fr  3fr 1fr;
+  grid-template-columns: 1fr  5fr 1fr;
   padding: .5rem;
   border-radius: 5px;
   border: 1px solid #d6d4d4;
@@ -172,21 +172,27 @@ label {
 
 .themeGallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  align-items: center;
+  padding: 0 1rem
 }
 
 .arrow {
   font-size: 3rem;
   border: none;
-  max-width: 7rem;
+  max-width: 4rem;
+}
+
+.arrow:hover {
+  padding: 1px;
+  border: 1px solid #d6d4d4;
+  cursor: pointer;
 }
 
 .smallImg {
   width: 100%;
   height: 4.5rem;
-  /*border: 1px solid black;*/
+  margin: 0 auto
 }
 
 .smallImg:hover {
@@ -268,9 +274,21 @@ label {
   .expiration {
     width: 25%;
   }
-
   .smallImg {
     max-width: 85%;
+  }
+
+  .themeGallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallerySection {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .smallImg {
+    width: 100%;
+  }
+  .arrow {
+    max-width: 7rem
   }
 }
 

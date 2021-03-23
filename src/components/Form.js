@@ -54,7 +54,7 @@ function Form() {
         />
       </div>
       <CardTheme label="Card Theme"/>
-      <button className="submit">Submit</button>
+      <button className="submit" onClick={(e) => e.preventDefault()}>Submit</button>
     </form>
   )
 }
