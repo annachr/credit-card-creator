@@ -85,6 +85,14 @@ label {
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
+/*.light {*/
+/*  color: whitesmoke;*/
+/*}*/
+
+/*.dark {*/
+/*  color: var(--primary-background-color)*/
+/*}*/
+
 .cardFrontWrapper {
   height: 100%;
   padding: 2rem;

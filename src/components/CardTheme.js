@@ -4,7 +4,7 @@ import ThemeImg from './ThemeImg'
 
 function CardTheme() {
   const {
-    bgNumber,
+    cardStyle,
     disabledNext,
     disabledPrev,
     nextSlide,
@@ -19,7 +19,7 @@ function CardTheme() {
       <div className="gallerySection" style={{display: showTheme ? 'grid' : 'none'}}>
         <button className="arrow" onClick={prevSlide} disabled={disabledPrev}>◂</button>
         <div className="themeGallery" >
-          <ThemeImg imgNumber={bgNumber}/>
+          <ThemeImg imgNumber={cardStyle}/>
         </div>
         <button className="arrow" onClick={nextSlide} disabled={disabledNext}>▸</button>
       </div>
