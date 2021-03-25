@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useEffect, useState } from 'react'
 const InputDataContext = React.createContext()
 
 function InputContextProvider(props) {
@@ -42,6 +42,19 @@ function InputContextProvider(props) {
   function changeExpirationMonth(e) {
     e.target.value === 'Month' ? setCardExpirationMonth('MM') : setCardExpirationMonth(e.target.value)
   }
+
+  // useEffect(() => {
+  //   function createYearOptions() {
+  //     let date = new Date()
+  //     let currentYear = date.getFullYear()
+  //     setCardExpirationYear( "<option value='0'>Year</option>")
+  //     for (let i = currentYear; i < currentYear + 12; i++) {
+  //       setCardExpirationYear("<option value='"+i+"'>"+i+" </option>")
+  //     }
+  //   }
+  //   createYearOptions()
+  // }, [])
+
 
   function changeExpirationYear(e) {
     e.target.value === 'Year' ? setCardExpirationYear('YY') : setCardExpirationYear(e.target.value)

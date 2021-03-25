@@ -19,7 +19,6 @@ function CardThemeContextProvider(props) {
     if (cardStyle === 14) {
       setDisabledNext(true)
     }
-    console.log(cardStyle)
   }
 
   function prevSlide(e) {
@@ -35,11 +34,11 @@ function CardThemeContextProvider(props) {
     <CardThemeContext.Provider value={{
       disabledNext,
       disabledPrev,
+      cardStyle,
+      showTheme,
       nextSlide,
       prevSlide,
-      cardStyle,
       showThemeSection,
-      showTheme
     }}>
       {props.children}
     </CardThemeContext.Provider>

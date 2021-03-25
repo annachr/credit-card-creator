@@ -19,7 +19,7 @@ function CardTheme() {
       <div className="gallerySection" style={{display: showTheme ? 'grid' : 'none'}}>
         <button className="arrow" onClick={prevSlide} disabled={disabledPrev}>◂</button>
         <div className="themeGallery" >
-          <ThemeImg imgNumber={cardStyle}/>
+          <ThemeImg />
         </div>
         <button className="arrow" onClick={nextSlide} disabled={disabledNext}>▸</button>
       </div>

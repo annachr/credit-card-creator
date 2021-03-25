@@ -5,14 +5,15 @@ function Select(props) {
 
   const {changeExpirationMonth, changeExpirationYear} = useContext(InputDataContext)
 
-  //   let date = new Date()
-  //   let currentYear = date.getFullYear()
-  //   // let yearOptions = "<option value='0'>Year</option>"
-  //   for (let i = currentYear; i < currentYear + 12; i++) {
-  //     yearOptions += "<option value='"+i+"'>"+i+" </option>"
-  //   }
+  let monthOptions = []
+  for (let i=1; i<=12; i++) {
+    monthOptions.push(i)
+  }
 
-
+  let yearOptions = []
+  for (let i=2021; i<=2032; i++) {
+    yearOptions.push(i)
+  }
 
   return (
     <div className="select">
@@ -20,33 +21,17 @@ function Select(props) {
       <div className="selectList">
         <select onChange={changeExpirationMonth}>
           <option>Month</option>
-          <option>01</option>
-          <option>02</option>
-          <option>03</option>
-          <option>04</option>
-          <option>05</option>
-          <option>06</option>
-          <option>07</option>
-          <option>08</option>
-          <option>09</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
+          {monthOptions.map(option => (
+              <option key={option}>{option}</option>
+            )
+          )}
         </select>
         <select onChange={changeExpirationYear} value={props.value}>
           <option>Year</option>
-          <option>2021</option>
-          <option>2022</option>
-          <option>2023</option>
-          <option>2024</option>
-          <option>2025</option>
-          <option>2026</option>
-          <option>2027</option>
-          <option>2028</option>
-          <option>2029</option>
-          <option>2030</option>
-          <option>2031</option>
-          <option>2032</option>
+          {yearOptions.map(option => (
+            <option key={option}>{option}</option>
+            )
+          )}
         </select>
       </div>
 

@@ -9,6 +9,7 @@ function Card() {
   const {cardStyle} = useContext(CardThemeContext)
   const cardAnimation = useSelector(state => state.cardRotateReducer)
   const image = require(`../backgrounds/bg${cardStyle}.jpg`).default
+
   const themeStyle = {
     backgroundImage: `url(${image})`
   }
