@@ -14,14 +14,15 @@ function InputContextProvider(props) {
   const [cardExpirationMonth, setCardExpirationMonth] = useState('MM')
   const [cardExpirationYear, setCardExpirationYear] = useState('YY')
 
-
   function handleNumberChange(e) {
     setFormCardNumber(e.target.value)
   }
 
-  function changeCardNumber() {
+  function changeCardNumber(e) {
     formCardNumber.length === 0 ? setCardNumber('#### #### #### ####') : setCardNumber(formCardNumber)
-    console.log(typeof formCardNumber)
+    if (e.keyCode < 48 || e.keyCode > 57) {
+      setCardNumber('#### #### #### ####')
+    }
   }
 
   function handleHolderChange(e) {
@@ -36,8 +37,11 @@ function InputContextProvider(props) {
     setFormCvvNumber(e.target.value)
   }
 
-  function changeCvv() {
+  function changeCvv(e) {
     formCvvNumber.length === 0 ? setCardCvvNumber('') : setCardCvvNumber(formCvvNumber)
+    if (e.keyCode < 48 || e.keyCode > 57) {
+      setCardCvvNumber('')
+    }
   }
 
   function changeExpirationMonth(e) {
@@ -48,7 +52,7 @@ function InputContextProvider(props) {
     e.target.value === 'Year' ? setCardExpirationYear('YY') : setCardExpirationYear(e.target.value)
   }
 
-  function clearForm() {
+  function clearData() {
     window.location.reload()
   }
 
@@ -70,7 +74,7 @@ function InputContextProvider(props) {
       changeCvv,
       changeExpirationMonth,
       changeExpirationYear,
-      clearForm
+      clearData
     }}>
       {props.children}
     </InputDataContext.Provider>

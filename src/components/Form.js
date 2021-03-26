@@ -18,7 +18,7 @@ function Form() {
     changeCardNumber,
     changeCvv,
     showThemeSection,
-    clearForm
+    clearData
   } = useContext(InputDataContext)
 
   const dispatch = useDispatch()
@@ -58,7 +58,7 @@ function Form() {
       <CardTheme onClick={showThemeSection}/>
       <div className="btnSection">
         <button className="btn" onClick={(e) => e.preventDefault()}>Submit</button>
-        <button className="btn" onClick={clearForm}>Clear Form</button>
+        <button className="btn" onClick={clearData}>Clear Data</button>
       </div>
 
     </form>

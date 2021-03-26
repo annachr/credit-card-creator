@@ -4,7 +4,6 @@ import ThemeImg from './ThemeImg'
 
 function CardTheme() {
   const {
-    cardStyle,
     disabledNext,
     disabledPrev,
     nextSlide,
