@@ -4,9 +4,7 @@ import {InputDataContext} from '../inputDataContext'
 
 function CardFront() {
   const {cardNumber, cardHolder, cardExpirationMonth, cardExpirationYear} = useContext(InputDataContext)
-  // const {cardHolder, cardExpiration} = useSelector(state => state.cardDataReducer)
   const activeStyle = useSelector(state => state.activeStyleReducer)
-  // const cardAnimation = useSelector(state => state.cardRotateReducer)
 
   return (
     <div className="cardFrontWrapper">
@@ -15,12 +13,12 @@ function CardFront() {
         <em><span className="visaLogo">VISA</span></em>
       </div>
       <div className={`cardNumberSection ${activeStyle}`}>
-        <p>{cardNumber}</p>
+        <span>{cardNumber}</span>
       </div>
       <div className="cardBottomSection">
         <div className={`cardData holder ${activeStyle}`}>
           <span className="data">Card Holder</span>
-          <span className="dataDetail">{cardHolder}</span>
+          <span className="dataDetail">{cardHolder.toUpperCase()}</span>
         </div>
         <div className={`cardData expiration ${activeStyle}`}>
           <span className="data">Expires</span>

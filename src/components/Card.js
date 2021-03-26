@@ -15,8 +15,8 @@ function Card() {
   }
 
   return (
-    <div className={`card ${cardAnimation}`} style={themeStyle}>
-        {cardAnimation === '' ? <CardFront /> : <CardBack />}
+    <div className='card' style={themeStyle}>
+        {cardAnimation ? <CardFront /> : <CardBack />}
     </div>
   )
 }

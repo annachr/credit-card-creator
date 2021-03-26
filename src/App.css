@@ -155,10 +155,6 @@ label {
   backdrop-filter: blur(5px)
 }
 
-.cardAnimation {
-  transform: rotateY(180deg);
-}
-
 .themeSection {
   display: grid;
 }
@@ -223,6 +219,12 @@ label {
 .btn:active {
   background-color: #4D78EF;
   cursor: pointer;
+}
+
+.btnSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 }
 
 /*CARD BACK SIDE*/
