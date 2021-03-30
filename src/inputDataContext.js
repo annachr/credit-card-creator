@@ -19,7 +19,12 @@ function InputContextProvider(props) {
   }
 
   function changeCardNumber() {
-    formCardNumber.length === 0 ? setCardNumber('#### #### #### ####') : setCardNumber(formCardNumber.replace(/[^0-9.]/g, ' '))
+    formCardNumber.length === 0
+      ? setCardNumber('#### #### #### ####')
+      : setCardNumber(formCardNumber
+        .replace(/[^0-9.]/g, '')
+        .replace(/(\d{4})/g, '$1 ')
+        .replace(/(^\s+|\s+$)/,''))
   }
 
   // onInput="value = value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
@@ -28,7 +33,7 @@ function InputContextProvider(props) {
   }
 
   function changeHolder(e) {
-    if (e.keyCode > 64 && e.keyCode < 91 || e.keyCode === 32 || e.keyCode === 18) {
+    if ((e.keyCode > 64 && e.keyCode < 91) || e.keyCode === 32 || e.keyCode === 18) {
       setCardHolder(formHolderName)
     } else if (formHolderName.length === 0) {
       setCardHolder('FULL NAME')

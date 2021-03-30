@@ -31,8 +31,8 @@ function Form() {
         onChange={handleNumberChange}
         onKeyUp={changeCardNumber}
         label="Card Number"
-        length="19"
-        pattern="[0-9]{19}"
+        length="16"
+        pattern="[0-9]{16}"
       />
       <InputField
         name="holder"
