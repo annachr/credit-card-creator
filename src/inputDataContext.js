@@ -19,17 +19,20 @@ function InputContextProvider(props) {
   }
 
   function changeCardNumber() {
-    formCardNumber.length === 0 ? setCardNumber('#### #### #### ####') : setCardNumber(formCardNumber.replace(/[^0-9.]/g, ''))
+    formCardNumber.length === 0 ? setCardNumber('#### #### #### ####') : setCardNumber(formCardNumber.replace(/[^0-9.]/g, ' '))
   }
 
   // onInput="value = value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-
   function handleHolderChange(e) {
     setFormHolderName(e.target.value)
   }
 
-  function changeHolder() {
-    formHolderName.length === 0 ? setCardHolder('FULL NAME') : setCardHolder(formHolderName)
+  function changeHolder(e) {
+    if (e.keyCode > 64 && e.keyCode < 91 || e.keyCode === 32 || e.keyCode === 18) {
+      setCardHolder(formHolderName)
+    } else if (formHolderName.length === 0) {
+      setCardHolder('FULL NAME')
+    }
   }
 
   function handleCvvChange(e) {
