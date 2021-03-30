@@ -31,8 +31,8 @@ function Form() {
         onChange={handleNumberChange}
         onKeyUp={changeCardNumber}
         label="Card Number"
-        length="16"
-        pattern="[0-9]{16}"
+        length="19"
+        pattern="[0-9' ']{19}"
       />
       <InputField
         name="holder"
@@ -63,7 +63,6 @@ function Form() {
         <button className="btn" onClick={(e) => e.preventDefault()}>Submit</button>
         <button className="btn" onClick={clearData}>Clear Data</button>
       </div>
-
     </form>
   )
 }

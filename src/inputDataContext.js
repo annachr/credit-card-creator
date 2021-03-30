@@ -15,21 +15,21 @@ function InputContextProvider(props) {
   const [cardExpirationYear, setCardExpirationYear] = useState('YY')
 
   function handleNumberChange(e) {
-    setFormCardNumber(e.target.value)
+    setFormCardNumber(e.target.value
+      .replace(/[^0-9.]/g, '')
+      .replace(/(\d{4})/g, '$1 ')
+      .replace(/(^\s+|\s+$)/,'')
+    )
   }
 
   function changeCardNumber() {
     formCardNumber.length === 0
       ? setCardNumber('#### #### #### ####')
-      : setCardNumber(formCardNumber
-        .replace(/[^0-9.]/g, '')
-        .replace(/(\d{4})/g, '$1 ')
-        .replace(/(^\s+|\s+$)/,''))
+      : setCardNumber(formCardNumber)
   }
 
-  // onInput="value = value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
   function handleHolderChange(e) {
-    setFormHolderName(e.target.value)
+    setFormHolderName(e.target.value.toUpperCase())
   }
 
   function changeHolder(e) {

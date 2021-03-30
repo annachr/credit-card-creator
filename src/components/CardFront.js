@@ -18,7 +18,7 @@ function CardFront() {
       <div className="cardBottomSection">
         <div className={`cardData holder ${activeStyle}`}>
           <span className="data">Card Holder</span>
-          <span className="dataDetail">{cardHolder.toUpperCase()}</span>
+          <span className="dataDetail">{cardHolder}</span>
         </div>
         <div className={`cardData expiration ${activeStyle}`}>
           <span className="data">Expires</span>
