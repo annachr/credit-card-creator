@@ -18,12 +18,11 @@ function InputContextProvider(props) {
     setFormCardNumber(e.target.value)
   }
 
-  function changeCardNumber(e) {
-    formCardNumber.length === 0 ? setCardNumber('#### #### #### ####') : setCardNumber(formCardNumber)
-    if (e.keyCode < 48 || e.keyCode > 57) {
-      setCardNumber('#### #### #### ####')
-    }
+  function changeCardNumber() {
+    formCardNumber.length === 0 ? setCardNumber('#### #### #### ####') : setCardNumber(formCardNumber.replace(/[^0-9.]/g, ''))
   }
+
+  // onInput="value = value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
 
   function handleHolderChange(e) {
     setFormHolderName(e.target.value)
@@ -37,11 +36,8 @@ function InputContextProvider(props) {
     setFormCvvNumber(e.target.value)
   }
 
-  function changeCvv(e) {
-    formCvvNumber.length === 0 ? setCardCvvNumber('') : setCardCvvNumber(formCvvNumber)
-    if (e.keyCode < 48 || e.keyCode > 57) {
-      setCardCvvNumber('')
-    }
+  function changeCvv() {
+    formCvvNumber.length === 0 ? setCardCvvNumber('') : setCardCvvNumber(formCvvNumber.replace(/[^0-9.]/g, ''))
   }
 
   function changeExpirationMonth(e) {

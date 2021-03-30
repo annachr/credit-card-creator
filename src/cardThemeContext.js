@@ -38,7 +38,7 @@ function CardThemeContextProvider(props) {
       showTheme,
       nextSlide,
       prevSlide,
-      showThemeSection,
+      showThemeSection
     }}>
       {props.children}
     </CardThemeContext.Provider>

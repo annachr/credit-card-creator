@@ -12,6 +12,7 @@ function InputField(props) {
         onChange={props.onChange}
         onKeyUp={props.onKeyUp}
         maxLength={props.length}
+        pattern={props.pattern}
       />
     </div>
   )

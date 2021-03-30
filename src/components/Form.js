@@ -32,6 +32,7 @@ function Form() {
         onKeyUp={changeCardNumber}
         label="Card Number"
         length="19"
+        pattern="[0-9]+"
       />
       <InputField
         name="holder"
@@ -53,6 +54,7 @@ function Form() {
           onBlur={() => dispatch(showCardFront())}
           label="CVV"
           length="3"
+          pattern="[0-9]+"
         />
       </div>
       <CardTheme onClick={showThemeSection}/>

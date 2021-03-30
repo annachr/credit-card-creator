@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c0359dce-c15f-4bca-9cfa-24fed82a6120" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/backgrounds/bg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backgrounds/bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/backgrounds/bg4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardTheme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cardThemeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cardThemeContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ThemeImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeImg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inputDataContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputDataContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../simple_to_do" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calculator_react" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,7 +66,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615369820246</updated>
-      <workItem from="1615369821598" duration="170299000" />
+      <workItem from="1615369821598" duration="170570000" />
+      <workItem from="1617023011655" duration="4783000" />
     </task>
     <servers />
   </component>
@@ -80,32 +79,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1616755464628">
+    <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1617091916726">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2660" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1616755464628" />
-    <state width="1899" height="463" key="GridCell.Tab.0.bottom" timestamp="1616677961781">
+    <state x="2660" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617091916726" />
+    <state width="1899" height="222" key="GridCell.Tab.0.bottom" timestamp="1617092852722">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="463" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1616677961781" />
-    <state width="1899" height="463" key="GridCell.Tab.0.center" timestamp="1616677961781">
+    <state width="1899" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617092852722" />
+    <state width="1899" height="222" key="GridCell.Tab.0.center" timestamp="1617092852722">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="463" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1616677961781" />
-    <state width="1899" height="463" key="GridCell.Tab.0.left" timestamp="1616677961781">
+    <state width="1899" height="222" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617092852722" />
+    <state width="1899" height="222" key="GridCell.Tab.0.left" timestamp="1617092852722">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="463" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1616677961781" />
-    <state width="1899" height="463" key="GridCell.Tab.0.right" timestamp="1616677961781">
+    <state width="1899" height="222" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617092852722" />
+    <state width="1899" height="222" key="GridCell.Tab.0.right" timestamp="1617092852722">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="463" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1616677961781" />
+    <state width="1899" height="222" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617092852722" />
   </component>
 </project>

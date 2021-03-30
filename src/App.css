@@ -37,6 +37,10 @@ input:hover, select:hover {
   transition: 1s ease all;
 }
 
+input:invalid {
+  border: 1px solid red;
+}
+
 label {
   font-size: 1.5rem;
   padding-bottom: .4rem;
