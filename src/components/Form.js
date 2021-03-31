@@ -18,7 +18,9 @@ function Form() {
     changeCardNumber,
     changeCvv,
     showThemeSection,
-    clearData
+    clearData,
+    submitCardData,
+    showWarningMessage
   } = useContext(InputDataContext)
 
   const dispatch = useDispatch()
@@ -58,9 +60,10 @@ function Form() {
           pattern="[0-9]{3}"
         />
       </div>
+      <p className="warning" style={{display: showWarningMessage ? 'grid' : 'none'}}>Please enter all required data</p>
       <CardTheme onClick={showThemeSection}/>
       <div className="btnSection">
-        <button className="btn" onClick={(e) => e.preventDefault()}>Submit</button>
+        <button className="btn" onClick={submitCardData}>Submit</button>
         <button className="btn" onClick={clearData}>Clear Data</button>
       </div>
     </form>

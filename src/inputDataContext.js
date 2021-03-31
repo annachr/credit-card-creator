@@ -14,6 +14,9 @@ function InputContextProvider(props) {
   const [cardExpirationMonth, setCardExpirationMonth] = useState('MM')
   const [cardExpirationYear, setCardExpirationYear] = useState('YY')
 
+  /*WARNING MESSAGE*/
+  const [showWarningMessage, setShowWarningMessage] = useState(false)
+
   function handleNumberChange(e) {
     setFormCardNumber(e.target.value
       .replace(/[^0-9.]/g, '')
@@ -56,6 +59,15 @@ function InputContextProvider(props) {
     e.target.value === 'Year' ? setCardExpirationYear('YY') : setCardExpirationYear(e.target.value)
   }
 
+  function submitCardData(e) {
+    e.preventDefault()
+    if (formCardNumber === '' || formHolderName === '' || formCvvNumber === '') {
+      setShowWarningMessage(true)
+    } else if (formCardNumber !== '' && formHolderName !== '' && formCvvNumber !== '') {
+      setShowWarningMessage(false)
+    }
+  }
+
   function clearData() {
     window.location.reload()
   }
@@ -78,7 +90,9 @@ function InputContextProvider(props) {
       changeCvv,
       changeExpirationMonth,
       changeExpirationYear,
-      clearData
+      clearData,
+      submitCardData,
+      showWarningMessage
     }}>
       {props.children}
     </InputDataContext.Provider>

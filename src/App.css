@@ -262,6 +262,11 @@ label {
   float: right;
 }
 
+.warning {
+  font-size: 1.5rem;
+  color: red;
+}
+
 /*MEDIA QUERIES*/
 
 @media(min-width: 470px) {
