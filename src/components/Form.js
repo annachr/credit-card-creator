@@ -32,6 +32,8 @@ function Form() {
         value={formCardNumber}
         onChange={handleNumberChange}
         onKeyUp={changeCardNumber}
+        onFocus={() => dispatch(changeStyle())}
+        onBlur={() => dispatch(changeStyleInactive())}
         label="Card Number"
         length="19"
         pattern="[0-9' ']{19}"
@@ -60,7 +62,7 @@ function Form() {
           pattern="[0-9]{3}"
         />
       </div>
-      <p className="warning" style={{display: showWarningMessage ? 'grid' : 'none'}}>Please enter all required data</p>
+      <p className="warning" style={{display: showWarningMessage ? 'grid' : 'none'}}>All fields must be completed.</p>
       <CardTheme onClick={showThemeSection}/>
       <div className="btnSection">
         <button className="btn" onClick={submitCardData}>Submit</button>

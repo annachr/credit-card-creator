@@ -17,6 +17,7 @@ function InputContextProvider(props) {
   /*WARNING MESSAGE*/
   const [showWarningMessage, setShowWarningMessage] = useState(false)
 
+
   function handleNumberChange(e) {
     setFormCardNumber(e.target.value
       .replace(/[^0-9.]/g, '')
@@ -29,6 +30,7 @@ function InputContextProvider(props) {
     formCardNumber.length === 0
       ? setCardNumber('#### #### #### ####')
       : setCardNumber(formCardNumber)
+
   }
 
   function handleHolderChange(e) {
@@ -61,9 +63,17 @@ function InputContextProvider(props) {
 
   function submitCardData(e) {
     e.preventDefault()
-    if (formCardNumber === '' || formHolderName === '' || formCvvNumber === '') {
+    if (formCardNumber === ''
+        || formHolderName === ''
+        || formCvvNumber === ''
+        || cardExpirationMonth === 'MM'
+        || cardExpirationYear === 'YY') {
       setShowWarningMessage(true)
-    } else if (formCardNumber !== '' && formHolderName !== '' && formCvvNumber !== '') {
+    } else if (formCardNumber !== ''
+        && formHolderName !== ''
+        && formCvvNumber !== ''
+        && cardExpirationMonth !== 'MM'
+        && cardExpirationYear !== 'YY') {
       setShowWarningMessage(false)
     }
   }

@@ -65,7 +65,7 @@ label {
 
 .cardDetails {
   display: grid;
-  grid-gap: 2rem
+  grid-gap: 2rem;
 }
 
 .selectList {
@@ -84,7 +84,6 @@ label {
   border-radius: 10px;
   z-index: 1;
   color: whitesmoke;
-  /*background-image: url('./backgrounds/bg14.jpg');*/
   -webkit-box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
@@ -263,7 +262,7 @@ label {
 }
 
 .warning {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: red;
 }
 
